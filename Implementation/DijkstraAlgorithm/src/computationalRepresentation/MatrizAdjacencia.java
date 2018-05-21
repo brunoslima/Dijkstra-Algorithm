@@ -9,14 +9,12 @@ import java.util.Iterator;
  */
 public class MatrizAdjacencia extends RepresentacaoComputacional {
     
-    //private int matriz[][];
     private itemMatriz matriz[][];
     public int posicaoAtual[];
     
     public MatrizAdjacencia(int numeroVertices){
         
         super(numeroVertices);
-        //this.matriz = new int[numeroVertices][numeroVertices];
         this.matriz = new itemMatriz[numeroVertices][numeroVertices];
         this.posicaoAtual = new int[this.numeroVertices];
         
@@ -33,21 +31,18 @@ public class MatrizAdjacencia extends RepresentacaoComputacional {
 
     @Override
     public void adicionaAresta(int i, int j, int peso) {
-        //this.matriz[i][j] = peso;
         this.matriz[i][j].setPeso(peso);
         this.matriz[i][j].setContem(true);
     }
 
     @Override
     public boolean verificarAdjacencia(int i, int j) {
-        //if(this.matriz[i][j] != 0) return(true);
         if(this.matriz[i][j].getContem() == true) return(true);
         return(false);
     }
     
     @Override
     public int getPeso(int i, int j) {
-        //return(this.matriz[i][j]);
         return(this.matriz[i][j].getPeso());
     }
 

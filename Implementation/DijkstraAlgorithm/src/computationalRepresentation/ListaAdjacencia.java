@@ -12,7 +12,6 @@ import java.util.Queue;
 public class ListaAdjacencia extends RepresentacaoComputacional {
     
     public Lista [] lista;
-    //public No posicaoAtual;
     
     public ListaAdjacencia(int numVertices){
         
@@ -67,7 +66,7 @@ public class ListaAdjacencia extends RepresentacaoComputacional {
     }
 
    
-    public boolean hasNext(int pos) { //OK
+    public boolean hasNext(int pos) {
 
         if(this.lista[pos].posicaoAtual != null) return(true);
         return(false);

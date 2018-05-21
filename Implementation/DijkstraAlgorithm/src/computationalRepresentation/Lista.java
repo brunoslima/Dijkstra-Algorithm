@@ -8,43 +8,12 @@ import javax.swing.JOptionPane;
  *
  * @author BRUNO S LIMA
  */
-public class Lista /*implements Iterable<No>*/{
+public class Lista {
     
     public No primeiro;
     public No ultimo;
     public int tamanhoLista;
     public No posicaoAtual = null;
-
-    /*
-    @Override
-    public Iterator<No> iterator() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    public class ListaIterator implements Iterator<No>{
-        
-        public No aux;
-        
-        ListaIterator(){
-            this.aux = primeiro;
-        }
-        
-        @Override
-        public boolean hasNext() {
-            
-            if(aux != null) return(true);
-            return(false);
-        }
-
-        @Override
-        public No next() {
-            
-            No proximo = aux;
-            aux = aux.getProx();
-            return(proximo);
-        }
-        
-    }*/
     
     public Lista(){
         

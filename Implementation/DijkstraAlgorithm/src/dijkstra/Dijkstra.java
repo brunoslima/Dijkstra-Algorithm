@@ -40,13 +40,6 @@ public class Dijkstra {
         
         int distancia;
         
-        /*
-        if(u.getDistancia() == Integer.MAX_VALUE){
-            distancia = adj.getPeso(u.getPosicao(), this.resultados[i].getPosicao());
-        }
-        else distancia = u.getDistancia() + adj.getPeso(u.getPosicao(), this.resultados[i].getPosicao());
-        */
-        
         if(u.getDistancia() != Integer.MAX_VALUE){
             
             distancia = u.getDistancia() + adj.getPeso(u.getPosicao(), this.resultados[i].getPosicao());
